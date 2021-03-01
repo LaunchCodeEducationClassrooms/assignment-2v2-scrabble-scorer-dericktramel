@@ -116,15 +116,15 @@ function scorerPrompt(word) {
 
 
 function transform(object) {
-  let newPointStructureObject = {};
+  let newPointObject = {};
   for (item in object) {
     for(i = 0; i < object[item].length; i++) {
       let key = object[item][i];
       key = key.toLowerCase();
-      newPointStructureObject[`${key}`] = Number(item);
+      newPointObject[`${key}`] = Number(item);
     }
   }
-    return newPointStructureObject;
+    return newPointObject;
   
 };
 
